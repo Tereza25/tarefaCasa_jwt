@@ -9,11 +9,12 @@ Para executar este projeto, você deverá ter instalado o Node.js e as dependên
 
 Seguiremos a ordem de instalações:
 
--------------------------------
 $ npm init
 $ npm install express --save
 $ npm install nodemon --save
 $ npm install mongoose
+
+
 -------------------------------
 
 Este projeto já está com o método HTTP Get organizado, e todas as rotas de integração com o banco de dados. O próximo passo agora é criar o processo de autenticação.
@@ -72,6 +73,9 @@ $ Colaboradoras.findOne({ email: req.body.email }, function{error, colaboradora}
 5 - Importar SECRET e gerar token JWT a partir do nome e secret e devolver na request $ jwt.sign({ name:colaboradora.name }, SECRET;
 
 6 - Bater na rota getAll via Postman com o token gerado
+
+
+
 
 
 
