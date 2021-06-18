@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "dotenv-safe": "^8.2.0",
     "express": "^4.17.1",
@@ -17,5 +18,14 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.13",
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danibotelho/tarefaCasa_jwt.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/danibotelho/tarefaCasa_jwt/issues"
+  },
+  "homepage": "https://github.com/danibotelho/tarefaCasa_jwt#readme"
 }
