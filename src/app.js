@@ -1,14 +1,17 @@
+require("dotenv-safe").config();
+
 const express = require("express")
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
 
 
 const app = express()
+app.use(express.json())
 
 //String de conexão
-mongoose.connect("mongodb://localhost:27017/reprograma",  {
-     useNewUrlParser: true,
-     useUnifiedTopology: true
+mongoose.connect(process.env.MONGODB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 });
 
 //Conexão com o mongo
@@ -32,14 +35,14 @@ app.use(bodyParser.json())
 
 
 app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*") 
-    res.header(
-        "Access-Control-Allow-Headers",
-        "Origin, X-Requested-With, Content-Type, Accept"
-        )
-        next()
-   
-    })
+  res.header("Access-Control-Allow-Origin", "*") 
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+    )
+    next()
+
+  })
 
 app.use("/", index)
 app.use("/colaboradoras", colaboradoras)

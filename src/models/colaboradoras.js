@@ -5,12 +5,12 @@ const mongoose = require('mongoose');
 //New mongoose.Schema é o comando utilizado para que possamos criar um novo Schema do mongo chamado tarefasSchema, através do mongoose.
 
 const colaboradorasSchema = new mongoose.Schema({
-    name: { type: String },
-    email: { type: String },
-    password: { type: String },
-    
+   name: { type: String },
+   email: { type: String },
+   password: { type: String },
+   
 },{
-    versionKey: false
+   versionKey: false
 });
 
 const colaboradoras = mongoose.model('colaboradoras', colaboradorasSchema);
