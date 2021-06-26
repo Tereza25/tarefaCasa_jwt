@@ -1,7 +1,7 @@
 {
   "name": "reprograma_jwt",
   "version": "1.0.0",
-  "description": "",
+  "description": "Olá, sejam bem-vindas a aula de autenticação e segurança! Meu nome é Tereza Oliveira (@Tereza25), e irei acompanhar vocês nessa semana.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.13",
+    "mongoose": "^5.12.15",
     "nodemon": "^2.0.7"
   },
   "repository": {
