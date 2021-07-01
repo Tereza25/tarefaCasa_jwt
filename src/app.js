@@ -1,3 +1,5 @@
+require('dotenv-safe').config();
+
 const express = require("express")
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
@@ -6,7 +8,10 @@ const mongoose = require("mongoose")
 const app = express()
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e9781e9c7c6194049d0728e15a6c1d318ec9d2d8
 //String de conexão
 mongoose.connect(process.env.MONGODB_URL,  {
      useNewUrlParser: true,
