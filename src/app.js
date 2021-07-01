@@ -8,6 +8,10 @@ const mongoose = require("mongoose")
 const app = express()
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> e9781e9c7c6194049d0728e15a6c1d318ec9d2d8
 //String de conexão
 mongoose.connect(process.env.MONGODB_URL,  {
      useNewUrlParser: true,
@@ -27,7 +31,7 @@ db.once("open", function (){
 //rotas
 const index = require("./routes/index")
 const colaboradoras = require("./routes/colaboradoras")
-
+const tarefas = require('./routes/tarefas')
 
 //configurar body parser
 app.use(bodyParser.json())
@@ -46,5 +50,7 @@ app.use(function (req, res, next) {
 
 app.use("/", index)
 app.use("/colaboradoras", colaboradoras)
+app.use("/tarefas", tarefas)
+
 
 module.exports = app

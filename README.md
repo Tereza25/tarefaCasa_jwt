@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+# tarefaCasa_jwt
+# tarefaCasa_jwt
+
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCK2kYBL7yXC8CY6sVrxXk07a7h
+uGPyXZvpCKynqw0rADWKEDH+5AoEWxfgXKLUUOUmQCSv6NYVXYM6vSyGDgeMnEcC
+fv29SsaQ1wOt0/MqddyUhMrNPTjyQo9I9/oOLxH52QliXgzYLAXqHz57K8l0gJvK
+AB/90C2P/U+s/ewv5wIDAQAB
+=======
 ## Turma Online 11 - Todas em Tech | Back-end | 2021 | Semana 15: Autenticação e Segurança
 
 Olá, sejam bem-vindas a aula de autenticação e segurança! Meu nome é Tereza Oliveira (@Tereza25), e irei acompanhar vocês nessa semana.
@@ -150,3 +159,4 @@ A atividade será criar uma nova rota no models de tarefas.js, fazer todas as et
 Apenas a rota getAll, será necessária. O objetivo é de testar no postman trazer todas as listas de tarefas com a autenticação reconhecendo o header.
 
 Faça o fork desse repositório e clone na sua máquina, crie uma branch, após as alterações, realize o pull request e siga o procedimento de registro de atividade. 
+>>>>>>> e9781e9c7c6194049d0728e15a6c1d318ec9d2d8
